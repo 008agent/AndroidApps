@@ -4,14 +4,31 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements View.OnClickListener {
+
+    public static Button buttonReader,buttonHistory;
+
+    private void GetIDs() {
+        buttonReader = (Button)findViewById(R.id.buttonReaderMode);
+        buttonHistory = (Button)findViewById(R.id.buttonHistoryMode);
+    }
+
+    private void SetEvents() {
+        buttonReader.setOnClickListener(this);
+        buttonHistory.setOnClickListener(this);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        GetIDs();
+        SetEvents();
     }
 
 
@@ -32,5 +49,20 @@ public class MainActivity extends Activity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.buttonReaderMode : {
+                Toast.makeText(this,"Selected Reader mode",Toast.LENGTH_SHORT).show();
+                setContentView(R.layout.activity_reader);
+                break;
+            }
+            case R.id.buttonHistoryMode : {
+                Toast.makeText(this,"Selected History mode",Toast.LENGTH_SHORT).show();
+                break;
+            }
+        }
     }
 }
