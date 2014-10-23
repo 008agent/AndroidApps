@@ -4,5 +4,12 @@
     <string name="app_name">NFCHostCardEmu</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_reader">Reader Mode</string>
+    <string name="greeting_uid_name">...Enter UID Name here</string>
+    <string name="action_scan_button">Scan RFID Label/Card</string>
+    <string name="action_save_RFID">Save RFID scan to history</string>
+    <string name="action_rfid_reader">RFID Reader</string>
+    <string name="Text_app_mode">Choose Application Mode</string>
+    <string name="Text_history">History</string>
 
 </resources>

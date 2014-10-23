@@ -1,0 +1,29 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/action_scan_button"
+        android:id="@+id/button"
+        android:enabled="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="@string/greeting_uid_name"
+        android:id="@+id/textViewName"
+        android:editable="true"
+        android:enabled="false" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSave"
+        android:text="@string/action_save_RFID"
+        android:enabled="true" />
+
+</LinearLayout>

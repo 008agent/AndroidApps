@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="action_save_RFID">Сохранить результат</string>
+    <string name="action_scan_button">Сканировать метку/карту</string>
+    <string name="action_settings">Настройки</string>
+    <string name="greeting_uid_name">...Ввелиие имя сканирования</string>
+    <string name="title_activity_reader">Режим сканирования</string>
+    <string name="Text_app_mode">Выберите режим</string>
+    <string name="Text_history">История</string>
+    <string name="action_rfid_reader">Чтение RFID</string>
+
+</resources>
